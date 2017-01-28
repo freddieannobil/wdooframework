@@ -1,6 +1,6 @@
 {
   "name": "webberdoo/wdooframework",
-  "description": "Wdoo Framework is built on top of the silex framework.",
+  "description": "Wdoo Framework is built on top of the silex micro framework.",
   "homepage": "https://github.com/webberdoo/wdooframework",
   "keywords": [
     "framework", "silex", "symfony"
