@@ -1,0 +1,24 @@
+home:
+  path: /
+  defaults: { _controller: 'Webberdoo\AppBundle\Controllers\AppController::index' }
+
+
+login:
+  path: /login
+  defaults: { _controller: 'Webberdoo\AppBundle\Controllers\Auth\AuthController::login' }
+
+app_oauth:
+  path: /oauth/{provider}
+  defaults: { _controller: 'Webberdoo\AppBundle\Controllers\Auth\AuthController::oAuth' }
+
+logout:
+  path: /logout
+  defaults: { _controller: 'Webberdoo\AppBundle\Controllers\Auth\AuthController::logout' }
+
+register:
+   path: /register
+   defaults: { _controller: 'Webberdoo\AppBundle\Controllers\Auth\RegistrationController::register' }
+
+activation:
+   path: /activation/{code}
+   defaults: { _controller: 'Webberdoo\AppBundle\Controllers\Auth\RegistrationController::validateActivationCode' }

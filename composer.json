@@ -1,0 +1,51 @@
+{
+  "name": "doowebdev/faweb",
+  "description": "Webberdoo Framework.",
+  "homepage": "https://github.com/webberdoo/doowebdev",
+  "keywords": [
+    "framework"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Freddie Annobil",
+      "homepage": "http://webberdoo.co.uk",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=5.4.0",
+    "symfony/translation": "^2.8",
+    "symfony/config": "^2.8",
+    "symfony/yaml": "^2.8",
+    "symfony/intl": "^2.8",
+    "symfony/twig-bridge": "^2.3",
+    "symfony/form": "^2.8",
+    "symfony/validator": "^2.8",
+    "symfony/security": "^2.8",
+    "illuminate/database": "^5.1",
+    "illuminate/events": "^5.1",
+    "twig/twig": "^1.16.2",
+    "ircmaxell/password-compat": "^1.0.4",
+    "swiftmailer/swiftmailer": "^5.3.0",
+    "suin/php-rss-writer": "^1.0",
+    "evert/sitemap-php": "~1.1.0",
+    "recaptcha/php5": "^1.1.0",
+    "hybridauth/hybridauth": "^2.3.0",
+    "ircmaxell/random-lib": "^1.1@dev",
+    "silex/silex": "~2.0",
+    "cocur/slugify": "^1.4",
+    "guzzlehttp/guzzle": "^6.1",
+    "gregwar/image": "^2.0",
+    "cartalyst/sentinel": "^2.0",
+    "desarrolla2/cache": "^2.1"
+  },
+
+  "autoload": {
+
+    "psr-4": {
+      "Webberdoo\\": "src",
+      "Webberdoo\\App\\": "app"
+    }
+  }
+}
