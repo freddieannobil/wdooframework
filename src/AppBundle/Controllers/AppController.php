@@ -10,7 +10,7 @@ class AppController
 
     public function index(Application $app)
     {
-        return $app['templating']->render('homeTag','/index.twig',[]);
+        return $app['templating']->render('homeTag','/index.html.twig',[]);
 
     }
 
