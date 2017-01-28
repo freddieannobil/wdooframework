@@ -1,14 +1,14 @@
 {
-  "name": "doowebdev/faweb",
-  "description": "Webberdoo Framework.",
-  "homepage": "https://github.com/webberdoo/doowebdev",
+  "name": "webberdoo/wdooframework",
+  "description": "Wdoo Framework is build on top of the silex framework.",
+  "homepage": "https://github.com/webberdoo/wdooframework",
   "keywords": [
-    "framework"
+    "framework", "silex", "symfony"
   ],
   "license": "MIT",
   "authors": [
     {
-      "name": "Freddie Annobil",
+      "name": "Freddie Annobil-Dodoo",
       "homepage": "http://webberdoo.co.uk",
       "role": "Developer"
     }
