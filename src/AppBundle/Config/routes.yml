@@ -22,3 +22,8 @@ register:
 activation:
    path: /activation/{code}
    defaults: { _controller: 'Webberdoo\AppBundle\Controllers\Auth\RegistrationController::validateActivationCode' }
+
+#install
+install:
+   path: /install
+   defaults: { _controller: 'Webberdoo\AppBundle\Controllers\InstallController::db' }

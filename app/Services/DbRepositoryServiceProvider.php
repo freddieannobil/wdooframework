@@ -23,7 +23,6 @@ use Webberdoo\AppBundle\Models\Widget\WidgetDbRepository;
 use Webberdoo\AppBundle\Models\Channel\ChannelDbRepository;
 use Silex\Application;
 use Pimple\ServiceProviderInterface;
-use Symfony\Component\HttpFoundation\Request;
 use Pimple\Container;
 
 /**
@@ -73,7 +72,7 @@ class DbRepositoryServiceProvider implements ServiceProviderInterface
         $app['commentSettingRepository'] = $app->share(
             function () {
 
-                return new CommentDbRepository();
+                //return new CommentDbRepository();
             }
         );
 

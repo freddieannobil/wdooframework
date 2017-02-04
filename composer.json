@@ -20,7 +20,6 @@
     "symfony/yaml": "^2.8",
     "symfony/intl": "^2.8",
     "symfony/twig-bridge": "^2.3",
-    "symfony/form": "^2.8",
     "symfony/validator": "^2.8",
     "symfony/security": "^2.8",
     "illuminate/database": "^5.1",
@@ -38,9 +37,14 @@
     "guzzlehttp/guzzle": "^6.1",
     "gregwar/image": "^2.0",
     "cartalyst/sentinel": "^2.0",
-    "desarrolla2/cache": "^2.1"
+    "desarrolla2/cache": "^2.1",
+    "symfony/form": "^3.2",
+    "doctrine/orm": "^2.5",
+    "peppeocchi/php-cron-scheduler": "^1.3",
+    "silex/web-profiler": "^2.0"
   },
-
+  "minimum-stability": "dev",
+  "prefer-stable" : true,
   "autoload": {
 
     "psr-4": {

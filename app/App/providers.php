@@ -52,11 +52,13 @@ $app->register(new \Webberdoo\App\Templating\TemplatingServiceProvider());
 
 //$app->register(new \Cocur\Slugify\Bridge\Silex\SlugifyServiceProvider());
 
-/*$app->register(new \Webberdoo\App\Services\EloquentServiceProvider());
+$app->register(new \Webberdoo\App\Services\EloquentServiceProvider());
 
-$app->register(new \Webberdoo\App\Services\DbRepositoryServiceProvider());
+//$app->register(new \Webberdoo\App\Services\DbRepositoryServiceProvider());
 
-$app->register(new \Webberdoo\App\Services\UploadServiceProvider());
+$app->register(new \Webberdoo\App\Services\DoctrineORMServiceProvider());
+
+/*$app->register(new \Webberdoo\App\Services\UploadServiceProvider());
 
 $app->register(new \Webberdoo\App\Services\ValidationRuleServiceProvider());
 

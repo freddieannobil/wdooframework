@@ -5,6 +5,7 @@ use Silex\Application;
 use Pimple\ServiceProviderInterface;
 use Illuminate\Database\Capsule\Manager as Capsule;
 use Cartalyst\Sentinel\Native\Facades\Sentinel;
+use Pimple\Container;
 
 /**
  * Class EloquentServiceProvider
@@ -15,11 +16,11 @@ class EloquentServiceProvider implements ServiceProviderInterface
     /**
      * @param Application $app
      */
-    public function register(Application $app)
+    public function register(Container $app)
     {
-        $app['capsule'] = $app->share(function () {
+        $app['capsule'] = function () {
             return new Capsule();
-        });
+        };
 
         $capsule = $app['capsule'];
 
@@ -33,16 +34,6 @@ class EloquentServiceProvider implements ServiceProviderInterface
             'collation' => 'utf8_unicode_ci',
             'prefix'    => '',
         ]);
-
-        /*$app['doo.container'] = $app->share(function () {
-            return new Container;
-        });
-
-        $app['doo.dispatcher'] = $app->share(function () use ($app) {
-            return new Dispatcher($app['doo.container']);
-        });
-
-        $capsule->setEventDispatcher($app['doo.dispatcher']);*/
 
         $capsule->setAsGlobal();
 
