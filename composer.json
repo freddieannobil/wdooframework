@@ -42,6 +42,7 @@
     "doctrine/orm": "^2.5",
     "peppeocchi/php-cron-scheduler": "^1.3",
     "silex/web-profiler": "^2.0"
+
   },
   "minimum-stability": "dev",
   "prefer-stable" : true,
