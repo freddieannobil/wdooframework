@@ -11,6 +11,8 @@
 |
 */
 
+//use Silex\Provider\WebProfilerServiceProvider;
+
 $app->register(new \Silex\Provider\FormServiceProvider());
 
 $app->register(new Silex\Provider\SessionServiceProvider());
@@ -44,6 +46,10 @@ $app->register(new \Silex\Provider\HttpFragmentServiceProvider());
 |--------------------------------------------------------------------------
 |
 */
+$app->register(new \Silex\Provider\WebProfilerServiceProvider(), array(
+    'profiler.cache_dir' => __DIR__.'/../Cache/profiler',
+    'profiler.mount_prefix' => '/_profiler', // this is the default
+));
 
 //Register the App Service provider into the silex container
 $app->register(new \Webberdoo\App\Services\AppServiceProvider());
